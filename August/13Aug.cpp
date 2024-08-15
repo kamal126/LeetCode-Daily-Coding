@@ -1,4 +1,7 @@
-#include<vector.h>
+
+#include<iostream>
+#include<vector>
+using namespace std;
 class Solution {
  public:
   vector<vector<int>> combinationSum2(vector<int>& candidates, int target) {
@@ -17,7 +20,6 @@ class Solution {
       ans.push_back(path);
       return;
     }
-
     for (int i = s; i < A.size(); ++i) {
       if (i > s && A[i] == A[i - 1])
         continue;
