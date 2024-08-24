@@ -1,7 +1,6 @@
 
 #include<iostream>
-#include<vector>
-using namespace std;
+#include<vector.h>
 class Solution {
  public:
   vector<vector<int>> combinationSum2(vector<int>& candidates, int target) {
@@ -10,7 +9,7 @@ class Solution {
     dfs(candidates, 0, target, {}, ans);
     return ans;
   }
-
+  
  private:
   void dfs(const vector<int>& A, int s, int target, vector<int>&& path,
            vector<vector<int>>& ans) {
